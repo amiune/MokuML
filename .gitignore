@@ -1,0 +1,11 @@
+.build/
+.swiftpm/
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+worker/.venv/
+dist/
+build/
+

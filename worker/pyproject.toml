@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mokuml-worker"
+version = "0.1.0"
+description = "Local worker for the MokuML macOS prediction app"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn>=0.27",
+  "pydantic>=2",
+  "sqlalchemy>=2",
+  "psycopg[binary]>=3",
+  "sqlglot>=25",
+  "pandas>=2.2",
+  "scikit-learn>=1.4",
+  "tabpfn>=2"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "ruff>=0.6"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
