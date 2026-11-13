@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mokuml-local"
+version = "0.2.0"
+description = "Private ChatGPT predictions with typed SQL planning, TILE and local model comparison"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "mcp>=1.12,<2", "fastapi>=0.115,<1", "uvicorn>=0.30,<1",
+  "python-multipart>=0.0.20", "pydantic>=2.10,<3",
+  "pandas>=2.2,<3.1", "numpy>=2,<3", "scikit-learn>=1.6,<2",
+  "scipy>=1.13,<2", "skrub>=0.7,<0.8", "joblib>=1.4,<1.6", "openpyxl>=3.1,<4",
+  "sqlalchemy>=2.0,<2.1", "psycopg[binary]>=3.2,<4", "pymysql[rsa]>=1.1,<2",
+  "torch>=2.5,<3", "tabicl==2.2.0", "transformers>=4.56,<5",
+  "accelerate>=1,<2", "huggingface-hub>=0.34,<1", "tqdm>=4.66"
+  , "duckdb==1.5.0", "sqlglot==28.0.0", "tabpfn==9.0.0", "structured-data-models==0.2.1"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "httpx>=0.28,<1", "ruff>=0.9,<1", "jsonschema>=4,<5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mokuml_local = ["assets/*", "model-manifest.json", "vendor/tile/LICENSE", "vendor/tabicl/LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["models: real locally cached model inference", "database: external disposable database integration"]
+
+[tool.ruff]
+target-version = "py311"
+extend-exclude = ["src/mokuml_local/vendor"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

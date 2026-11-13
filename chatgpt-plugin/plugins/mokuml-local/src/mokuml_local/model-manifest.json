@@ -1,0 +1,88 @@
+{
+  "tile": {
+    "repository": "soda-inria/tile",
+    "revision": "f765ef8a35af9228f69589e94aab072051477e07",
+    "license": "BSD-3-Clause"
+  },
+  "tabicl": {
+    "repository": "jingang/TabICL",
+    "revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+    "license": "BSD-3-Clause",
+    "files": {
+      "tabicl-classifier-v2-20260212.ckpt": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+      "tabicl-regressor-v2-20260212.ckpt": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a"
+    }
+  },
+  "qwen": {
+    "repository": "Qwen/Qwen3-0.6B-Base",
+    "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+    "license": "Apache-2.0",
+    "layers": 16,
+    "files": {
+      "model.safetensors": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba",
+      "config.json": "504a6b58c4271583724e66584b6b7698aea18450209df6b2f7582df0e89cee59",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "3c04ed3ca964ea2f6b2b5faf0dc4d31aec1cb1e8b4bcf63f402d295046b422b5",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    }
+  },
+  "tabpfn": {
+    "repository": "Prior-Labs/TabPFN-v2-clf",
+    "revision": "275f19d2add9c2c0de38f9ebaded3856599fa2e7",
+    "version": "v2",
+    "license": "Prior Labs License (attribution)",
+    "classifier": "tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
+    "regressor": "tabpfn-v2-regressor.ckpt",
+    "files": {
+      "tabpfn-v2-classifier-finetuned-zk73skhh.ckpt": "cf8c519c01eaf1613ee91239006d57b1c806ff5f23ac1aeb1315ba1015210e49",
+      "classifier/LICENSE.txt": "08b1851b4b6136b5fb0cb124d3258e0d91e3e1623f1be5904b77e4d270d112d8",
+      "tabpfn-v2-regressor.ckpt": "2ab5a07d5c41dfe6db9aa7ae106fc6de898326c2765be66505a07e2868c10736",
+      "regressor/LICENSE.txt": "08b1851b4b6136b5fb0cb124d3258e0d91e3e1623f1be5904b77e4d270d112d8"
+    },
+    "sources": {
+      "tabpfn-v2-classifier-finetuned-zk73skhh.ckpt": {
+        "repository": "Prior-Labs/TabPFN-v2-clf",
+        "revision": "275f19d2add9c2c0de38f9ebaded3856599fa2e7"
+      },
+      "classifier/LICENSE.txt": {
+        "repository": "Prior-Labs/TabPFN-v2-clf",
+        "revision": "275f19d2add9c2c0de38f9ebaded3856599fa2e7",
+        "filename": "LICENSE.txt"
+      },
+      "tabpfn-v2-regressor.ckpt": {
+        "repository": "Prior-Labs/TabPFN-v2-reg",
+        "revision": "02a44705ff7790b50cded404bc59adb94da456a1"
+      },
+      "regressor/LICENSE.txt": {
+        "repository": "Prior-Labs/TabPFN-v2-reg",
+        "revision": "02a44705ff7790b50cded404bc59adb94da456a1",
+        "filename": "LICENSE.txt"
+      }
+    }
+  },
+  "kumo": {
+    "repository": "nvidia/Kumo-Tabular",
+    "revision": "c5893d418e162b9f841ae179dc767afefff73831",
+    "version": "small-v1.0.1",
+    "license": "OpenMDW-1.1",
+    "files": {
+      "small/classifier.pt": "1ff91f484e19021aaf7d9eff6cc07e6d95a60b4aaad473e83e2ab2c3bfd2b617",
+      "small/regressor.pt": "fc672f536501d64356036050ac2acea7e46927f7b9ad38366abe048f88e7d423",
+      "LICENSE": "44b43ed7b8e0f987dc5e90fb6cb4b901eccf0b14dc9f17a9033951603851d37d"
+    }
+  },
+  "tabpfn35": {
+    "repository": "Prior-Labs/tabpfn_3_5",
+    "revision": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+    "version": "v3.5",
+    "license": "User-provided appropriate license required",
+    "classifier": "tabpfn-v3.5-20260909.safetensors",
+    "regressor": "tabpfn-v3.5-20260909.safetensors",
+    "files": {
+      "tabpfn-v3.5-20260909.safetensors": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+      "LICENSE": "9570fdd687bb76ed45499412ad57d6ba949848e6d731f1242572bb57f2f73ae1"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "mokuml-local-marketplace",
+  "interface": {"displayName": "MokuML Local"},
+  "plugins": [{
+    "name": "mokuml-local",
+    "source": {"source": "local", "path": "./plugins/mokuml-local"},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+    "category": "Productivity"
+  }]
+}

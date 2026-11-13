@@ -1,2 +1,0 @@
-"""SQL validation helpers."""
-

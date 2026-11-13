@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mokuml-local",
+  "version": "0.2.0",
+  "description": "Predict categories, values and future outcomes from files or databases using local TILE and automatic model comparison.",
+  "extensions": {"com.openai": {
+    "requires_local_executor": true,
+    "onboardingSkill": "./skills/setup/SKILL.md",
+    "interface": {
+      "displayName": "MokuML Predictions",
+      "shortDescription": "Ask for predictions and understand their evidence",
+      "developerName": "MokuML",
+      "category": "Productivity",
+      "capabilities": ["Read", "Write"],
+      "defaultPrompt": ["Use MokuML to inspect my data, predict an outcome, and explain the result."]
+    }
+  }}
+}
